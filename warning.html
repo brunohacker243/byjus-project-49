@@ -1,0 +1,16 @@
+<h1>Digite a senha para acessar esse documento. (dica: escreva "a senha")</h1>
+<input id="password" type="password"></input>
+<script>
+    function get() {
+        if(document.getElementById("password").value == "a senha") {
+            alert("Senha correta, aguarde...");
+            location.href = "continue.html";
+        } else {
+            alert("Senha incorreta, voltando para a página inicial");
+            location.href = "index.html";
+        }
+    }
+</script>
+<button onclick="get();">Continuar</button>
+<br>
+<h2>Você não tem a senha (que é "a senha")? Clique <a href="index.html">aqui</a></h2>
